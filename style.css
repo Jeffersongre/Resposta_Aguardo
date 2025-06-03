@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.message h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+
+#noButton {
+    transition: transform 0.3s ease-in-out;
+    position: relative; 
+}
+
+
+.move {
+    transform: translateX(100px); 
+}
+.strike-replace {
+    position: relative;
+    font-weight: bold;
+}
+
+.strike-replace del {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+
+.strike-replace ins {
+    color: #c03;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#noButton {
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 10;
+}
+
+#yesButton {
+    z-index: 5;
+}
+#yesButton {
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+#yesButton:hover {
+    background-color: #ffb6c1;
+    color: white;
+    box-shadow: 0 0 15px #ff69b4;
+}
